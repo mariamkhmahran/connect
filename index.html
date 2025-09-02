@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariam Mahran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4ba0240f91.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, rgba(230, 222, 250, 0.8), rgba(244, 240, 255, 0.9));
+      backdrop-filter: blur(12px);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2e2e2e;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 3rem 4rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      width: 800px;
+      max-width: 90%;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+
+    .subtitle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .subtitle h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0;
+      color: #555;
+    }
+
+    .badge {
+      background-color: #568203;
+      color: white;
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+      gap: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .links i {
+      width: 20px;
+      text-align: center;
+    }
+  
+    .links a.linkedin { color: #0077b5; }   /* LinkedIn blue */
+    .links a.github { color: #24292e; }     /* GitHub black */
+    .links a.email { color: #002147; }      /* Gmail red */
+    .links a.orcid { color: #a6ce39; }      /* ORCID green */
+
+    .links a.github:visited   { color: #24292e; }
+    .links a.linkedin:visited { color: #0077b5; }
+    .links a.email:visited    { color: #002147; }
+    .links a.orcid:visited    { color: #a6ce39; }
+
+    .links a.github:hover {
+      color: #000000;
+    }
+
+    .links a.linkedin:hover {
+      color: #004471;
+    }
+
+    .links a.email:hover {
+      color: #003366;
+    }
+
+    .links a.orcid:hover {
+      color: #7ea62b;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.4rem;
+      }
+
+      .subtitle h2 {
+        font-size: 1rem;
+      }
+
+      .description {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Mariam Mahran</h1>
+    <div class="subtitle">
+      <h2>Machine Learning Engineer</h2>
+      <!-- <span class="badge">Open to Work</span> -->
+    </div>
+    <p class="description">
+      I am a passionate machine learning engineer with a focus on AI fairness, interpretability, and large language models.
+      Currently exploring how sparse autoencoders and custom GPT-style architectures can reveal social constructs within model representations.
+      <!-- <br/><br/>
+      My current contract is coming to an end so I am actively looking for my new role.<br/>
+      <b>Feel free to reach out!</b> -->
+    </p>
+    <div class="links">
+      <a class="email" href="mailto:mariam@example.com"><i class="fas fa-envelope"></i> mariamkhmahran@gmail.com</a>
+      <a class="github" href="https://github.com/mariamkhmahran" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/mariam-mahran/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a class="orcid" href="https://orcid.org/0009-0003-0568-0172" target="_blank"><i class="fas fa-id-badge"></i> ORCID</a>
+    </div>
+  </div>
+</body>
+</html>
