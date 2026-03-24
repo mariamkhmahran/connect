@@ -43,10 +43,11 @@
 
     .subtitle {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
     }
 
     .subtitle h2 {
@@ -56,15 +57,30 @@
       color: #555;
     }
 
+    .mata {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+
     .badge {
-      background-color: #568203;
-      color: white;
       padding: 0.4rem 1rem;
       font-size: 0.8rem;
       border-radius: 50px;
       font-weight: 600;
       letter-spacing: 0.5px;
       white-space: nowrap;
+    }
+
+    .badge.green {
+      background-color: #568203;
+      color: white;
+    }
+
+    .badge.gray {
+      background-color: #ddd;
+      color: black;
     }
 
     .description {
@@ -152,17 +168,19 @@
     <h1>Mariam Mahran</h1>
     <div class="subtitle">
       <h2>Machine Learning Engineer</h2>
-      <!-- <span class="badge">Open to Work</span> -->
+      <div class="meta">
+        <span class="badge gray">📍 Cairo, Egypt</span>
+        <span class="badge green">Open to Work</span>
+      </div>
     </div>
     <p class="description">
-      I am a passionate machine learning engineer with a focus on AI fairness, interpretability, and large language models.
-      Currently exploring how sparse autoencoders and custom GPT-style architectures can reveal social constructs within model representations.
-      <!-- <br/><br/>
-      My current contract is coming to an end so I am actively looking for my new role.<br/>
-      <b>Feel free to reach out!</b> -->
+      Hi! I’m Mariam, an AI engineer who enjoys turning complex ideas into practical, working systems. I’m especially interested in understanding how models learn and how to make them more reliable and impactful. 
+      <br/><br/>
+      I’m currently seeking a new opportunity to continue growing my skills and to be part of a dynamic environment where I can contribute and learn at the same time.<br/>
+      <b>Feel free to reach out!</b>
     </p>
     <div class="links">
-      <a class="email" href="mailto:mariam@example.com"><i class="fas fa-envelope"></i> mariamkhmahran@gmail.com</a>
+      <a class="email" href="mailto:mariamkhmahran@gmail.com"><i class="fas fa-envelope"></i> mariamkhmahran@gmail.com</a>
       <a class="github" href="https://github.com/mariamkhmahran" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       <a class="linkedin" href="https://www.linkedin.com/in/mariam-mahran/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a class="orcid" href="https://orcid.org/0009-0003-0568-0172" target="_blank"><i class="fas fa-id-badge"></i> ORCID</a>
